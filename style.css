@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(img/maudong.jpg) no-repeat center/cover;
+}
+.hot{
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(img/hotweather.jpg) no-repeat center/cover;
+}
+
+.hot #weather{
+    background: url(./img/hotweather.jpg) no-repeat center/cover;
+}
+.warm{
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(img/muathu.jpg) no-repeat center/cover;
+}
+
+.warm #weather{
+    background: url(./img/muathu.jpg) no-repeat center/cover;
+}
+.cold{
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url(img/maudong.jpg) no-repeat center/cover;
+}
+
+.cold #weather{
+    background: url(./img/maudong.jpg) no-repeat center/cover;
+}
+#weather {
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: url(./img/maudong.jpg) no-repeat center/cover;
+    transition: background 0.4s;
+}
+
+.search {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    font-size: 19px;
+    transition: background 0.4s, border-radius 0.4s, box-shadow 0.4s;
+}
+
+.search:focus {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px 0 15px 0;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    margin: 40px 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.content .capital {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.content .time {
+    margin: 15px 0 20px 0;
+    font-size: 15px;
+}
+
+.content .temperature {
+    font-size: 65px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 10px;
+    margin: 0 30px;
+    padding: 20px;
+    transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.content .short-desc {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 20px 0px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.content .more-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .more-desc div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.more-desc div i {
+    margin: 5px 0;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
